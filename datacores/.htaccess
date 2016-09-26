@@ -1,0 +1,6 @@
+AuthType Basic
+AuthName "RASI BPO-Manipulation"
+AuthUserFile /path/to/.htuser
+#<Files index.php>
+Require user username
+#</Files>

@@ -1,0 +1,4 @@
+INSERT into bpolevels SELECT itemID, typeID, materialEfficiency, timeEfficiency, runs, now(), 0.0, 0.0, 0, 0.0, 0.0, -1, '0000-00-00 00:00:00', 1, '0000-00-00 00:00:00', NULL, 1676205336  FROM bpos
+WHERE itemID NOT IN (
+SELECT itemID FROM bpolevels)
+AND quantity = -1
